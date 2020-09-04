@@ -75,9 +75,7 @@ node{
 		try
 		{
       		workspace = pwd ()
-			sh """cd $workspace/collaborationBackEnd; mvn clean compile package"""
-      		sh """cd $workspace/collaborationControllers; mvn clean compile package"""  
-      
+			sh """mvn clean compile package"""      
 		}
 		catch (e) 
 		{
